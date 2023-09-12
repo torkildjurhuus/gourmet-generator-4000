@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, TextField, Paper, Typography, IconButton } from '@mui/material';
+import { Button, Paper, Typography, IconButton, Slider, Grid } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './App.css';
 
@@ -32,7 +32,7 @@ const App = () => {
     ];
 
 
-    const toppings = ["Roast beef", "Egg og avocado", "Skinka og tomat", "Piparspeigpylsa", "Hvítleksspeigpylsa", "Speigpylsa", "Livradeiggj", "Brieostur", "Egg", "Avokado"];
+    const toppings = ["Roast beef", "Egg and avocado", "Ham and tomato", "Piparspeigpylsa", "Hvítleksspeigpylsa", "Speigpylsa", "Livradeiggj", "Brieostur", "Egg", "Avokado"];
     const breads = ["Chiabreyð", "Fullkornsbreyð"];
     const condiments = ["Dijonaise", "Majones", "Grønt pesto", "Reytt pesto", "Remoláta"];
 
@@ -80,45 +80,61 @@ const App = () => {
 
     return (
         <div className="app">
-            <Typography variant="h4" component="h1" gutterBottom>
-                Gourmet Generator 4000
-            </Typography>
-            <TextField
-                id="num-sandwiches"
-                label="Tal av breyðflísum"
-                type="number"
-                value={numSandwiches}
-                onChange={(e) => setNumSandwiches(Number(e.target.value))}
-            />
-            <Button variant="contained" color="primary" onClick={generateSandwiches}>
-                Smyr breyðflísar
-            </Button>
+            <div className="header">
+                <Typography variant="h4" component="h1" gutterBottom>
+                    Gourmet Generator 4000
+                </Typography>
+                <div>
+                    <Typography gutterBottom>Tal av breyðflísum</Typography>
+                    <Slider
+                        className="fixed-slider"
+                        value={numSandwiches}
+                        onChange={(e, value) => setNumSandwiches(value)}
+                        min={1}
+                        max={10}
+                        valueLabelDisplay="auto"
+                    />
+                </div>
+                <Button variant="contained" color="primary" onClick={generateSandwiches}>
+                    Smyr breyðflísar
+                </Button>
+            </div>
             <div className="sandwiches">
                 {sandwiches.map((sandwich, index) => (
-                    <Paper elevation={3} className="sandwich" key={index}>
-                        <Typography variant="body1">{sandwich.presentation}</Typography>
-                        <IconButton aria-label="add to favorites" onClick={() => addToFavorites(sandwich)}>
-                            <FavoriteIcon />
-                        </IconButton>
+                    <Paper elevation={3} className="sandwich" key={index} style={{ position: 'relative', padding: '16px', marginBottom: '8px' }}>
+                        <div className="icon-and-text">
+                            <Typography variant="body1">{sandwich.presentation}</Typography>
+                            <IconButton aria-label="add to favorites" onClick={() => addToFavorites(sandwich)}>
+                                <FavoriteIcon />
+                            </IconButton>
+                        </div>
                     </Paper>
+
                 ))}
             </div>
 
-            <Typography variant="h5" component="h2" gutterBottom>
+            <Typography variant="h5" component="h2" gutterBottom style={{ marginTop: '16px', marginBottom: '16px' }}>
                 Your Favorite Sandwiches
             </Typography>
             <div className="favorites">
                 {favorites.map((sandwich, index) => (
-                    <Paper elevation={3} className="sandwich" key={index}>
-                        <Typography variant="body1">{sandwich.presentation}</Typography>
-                        <IconButton aria-label="remove from favorites" onClick={() => removeFromFavorites(sandwich)}>
-                            <FavoriteIcon />
-                        </IconButton>
+                    <Paper elevation={3} className="sandwich" key={index} style={{ padding: '16px', marginBottom: '8px' }}>
+                        <div className="icon-and-text">
+                            <Typography variant="body1">{sandwich.presentation}</Typography>
+                            <IconButton
+                                aria-label="remove from favorites"
+                                onClick={() => removeFromFavorites(sandwich)}
+                                className="red-icon"
+                            >
+                                <FavoriteIcon />
+                            </IconButton>
+                        </div>
                     </Paper>
                 ))}
             </div>
         </div>
     );
 };
+
 
 export default App;

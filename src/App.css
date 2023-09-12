@@ -1,34 +1,65 @@
-/* App.css */
-
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%; }
+}
 
 .app {
   font-family: Arial, sans-serif;
   padding: 20px;
   text-align: center;
   width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.sandwiches,
-.favorites {
+.header {
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.sandwiches, .favorites {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
+
+
+.sandwich-content {
+  position: relative;
+  padding-bottom: 32px; /* Add extra padding to make room for the icon */
+}
+
+.fixed-slider {
+  max-width: 300px;
+  margin: auto;
+}
+
 .sandwich {
+  position: relative;  /* this is crucial */
   margin: 10px;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 200px;
   text-align: left;
+}
+
+.icon-and-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.red-icon {
+  color: red;
 }
