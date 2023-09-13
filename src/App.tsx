@@ -40,9 +40,9 @@ const App = () => {
     ];
 
 
-    const toppings = ["Roast beef", "Egg and avocado", "Ham and tomato", "Peppersalami", "Garlic Salami", "Salami", "Liver paté", "Brie", "Egg", "Avocado"];
-    const breads = ["Chia bread", "Whole "];
-    const condiments = ["Dijonaise", "Majones", "Grønt pesto", "Reytt pesto", "Remoláta"];
+    const toppings = ["Roast beef", "Egg and avocado", "Ham and tomato", "Pepper salami", "Garlic Salami", "Salami", "Liver paté", "Brie", "Egg", "Avocado"];
+    const breads = ["Chia bread", "Whole grain bread "];
+    const condiments = ["Dijonaise", "Mayo", "Green pesto", "Red pesto", "Remoulade", "Pickled red cabbage"];
 
     useEffect(() => {
         const savedFavorites = localStorage.getItem("favorites");
