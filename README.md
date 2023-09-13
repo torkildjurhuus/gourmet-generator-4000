@@ -8,17 +8,6 @@ The Gourmet Generator 4000 is a React-based web application that generates rando
 - **Persistent Favorites**: Your favorites are stored in local storage.
 - **Dynamic Presentation**: Each sandwich comes with its unique, dynamically generated presentation text.
 
-## Technologies Used
-- React
-- TypeScript
-- Material-UI
-- Local Storage
-
-## Getting Started
-### Prerequisites
-- Node.js
-- Yarn package manager
-
 ### Installation
 1. Clone the repo: `git clone https://github.com/yourusername/Gourmet-Generator-4000.git`
 2. Navigate to the project directory: `cd Gourmet-Generator-4000`
