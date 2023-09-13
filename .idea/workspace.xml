@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat: styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694552833675</updated>
       <workItem from="1694552834742" duration="124000" />
-      <workItem from="1694552980778" duration="3420000" />
+      <workItem from="1694552980778" duration="5211000" />
     </task>
     <task id="LOCAL−00001" summary="feat: initial commit">
       <created>1694553622080</created>
@@ -96,7 +97,19 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1694557525756</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="feat: styling">
+      <created>1694592425815</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1694592425815</updated>
+    </task>
+    <task id="LOCAL−00005" summary="feat: styling">
+      <created>1694593261967</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1694593261967</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

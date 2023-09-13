@@ -1,12 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Button, Paper, Typography, IconButton, Slider, Grid } from '@mui/material';
+import { useState, useEffect } from "react";
+import { Button, Paper, Typography, IconButton, Slider } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './App.css';
 
+interface ISandwich {
+    topping: string;
+    bread: string;
+    condiment: string;
+    presentation?: string;
+}
+
 const App = () => {
-    const [sandwiches, setSandwiches] = useState([]);
-    const [favorites, setFavorites] = useState([]);
-    const [numSandwiches, setNumSandwiches] = useState(1);
+    const [sandwiches, setSandwiches] = useState<ISandwich[]>([]);
+    const [favorites, setFavorites] = useState<ISandwich[]>([]);
+    const [numSandwiches, setNumSandwiches] = useState<number>(1);
 
     const presentationTemplates = [
         "A union of {bread} and {topping}, accentuated by {condiment}.",
@@ -32,9 +39,9 @@ const App = () => {
     ];
 
 
-    const toppings = ["Roast beef", "Egg and avocado", "Ham and tomato", "Piparspeigpylsa", "Hvítleksspeigpylsa", "Speigpylsa", "Livradeiggj", "Brieostur", "Egg", "Avokado"];
+    const toppings = ["Roast beef", "Egg and avocado", /* ... */];
     const breads = ["Chiabreyð", "Fullkornsbreyð"];
-    const condiments = ["Dijonaise", "Majones", "Grønt pesto", "Reytt pesto", "Remoláta"];
+    const condiments = ["Dijonaise", "Majones", /* ... */];
 
     useEffect(() => {
         const savedFavorites = localStorage.getItem("favorites");
@@ -47,7 +54,7 @@ const App = () => {
         localStorage.setItem("favorites", JSON.stringify(favorites));
     }, [favorites]);
 
-    const generatePresentation = (sandwich) => {
+    const generatePresentation = (sandwich: ISandwich) => {
         const randomIndex = Math.floor(Math.random() * presentationTemplates.length);
         return presentationTemplates[randomIndex]
             .replace("{bread}", sandwich.bread)
@@ -56,26 +63,27 @@ const App = () => {
     };
 
     const generateSandwiches = () => {
-        const newSandwiches = [];
+        const newSandwiches: ISandwich[] = [];
         for (let i = 0; i < numSandwiches; i++) {
             const topping = toppings[Math.floor(Math.random() * toppings.length)];
             const bread = breads[Math.floor(Math.random() * breads.length)];
             const condiment = condiments[Math.floor(Math.random() * condiments.length)];
-
             const presentation = generatePresentation({ topping, bread, condiment });
             newSandwiches.push({ topping, bread, condiment, presentation });
         }
         setSandwiches(newSandwiches);
     };
 
-    const addToFavorites = (sandwich) => {
-        if (!favorites.some(fav => JSON.stringify(fav) === JSON.stringify(sandwich))) {
-            setFavorites([...favorites, sandwich]);
-        }
+    const addToFavorites = (sandwich: ISandwich) => {
+        setFavorites(prev => [...prev, sandwich]);
     };
 
-    const removeFromFavorites = (sandwich) => {
-        setFavorites(favorites.filter(fav => JSON.stringify(fav) !== JSON.stringify(sandwich)));
+    const removeFromFavorites = (sandwich: ISandwich) => {
+        setFavorites(favs => favs.filter(fav => JSON.stringify(fav) !== JSON.stringify(sandwich)));
+    };
+
+    const handleSliderChange = (event: Event, newValue: number | number[]) => {
+        setNumSandwiches(newValue as number);
     };
 
     return (
@@ -89,7 +97,7 @@ const App = () => {
                     <Slider
                         className="fixed-slider"
                         value={numSandwiches}
-                        onChange={(e, value) => setNumSandwiches(value)}
+                        onChange={handleSliderChange}
                         min={1}
                         max={10}
                         valueLabelDisplay="auto"
@@ -109,10 +117,8 @@ const App = () => {
                             </IconButton>
                         </div>
                     </Paper>
-
                 ))}
             </div>
-
             <Typography variant="h5" component="h2" gutterBottom style={{ marginTop: '16px', marginBottom: '16px' }}>
                 Your Favorite Sandwiches
             </Typography>
@@ -135,6 +141,5 @@ const App = () => {
         </div>
     );
 };
-
 
 export default App;
