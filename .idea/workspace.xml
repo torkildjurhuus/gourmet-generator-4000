@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="fix: added types">
+    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="fix: removed event">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694552833675</updated>
       <workItem from="1694552834742" duration="124000" />
-      <workItem from="1694552980778" duration="5448000" />
+      <workItem from="1694552980778" duration="6038000" />
     </task>
     <task id="LOCAL−00001" summary="feat: initial commit">
       <created>1694553622080</created>
@@ -119,7 +118,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1694594572017</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="fix: removed event">
+      <created>1694596804141</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1694596804141</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +134,7 @@
     <MESSAGE value="feat: initial commit" />
     <MESSAGE value="feat: styling" />
     <MESSAGE value="fix: added types" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: added types" />
+    <MESSAGE value="fix: removed event" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: removed event" />
   </component>
 </project>
