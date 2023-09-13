@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, MouseEvent } from "react";
 import { Button, Paper, Typography, IconButton, Slider } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './App.css';
@@ -14,6 +14,7 @@ const App = () => {
     const [sandwiches, setSandwiches] = useState<ISandwich[]>([]);
     const [favorites, setFavorites] = useState<ISandwich[]>([]);
     const [numSandwiches, setNumSandwiches] = useState<number>(1);
+
 
     const presentationTemplates = [
         "A union of {bread} and {topping}, accentuated by {condiment}.",
@@ -39,9 +40,9 @@ const App = () => {
     ];
 
 
-    const toppings = ["Roast beef", "Egg and avocado", /* ... */];
-    const breads = ["Chiabreyð", "Fullkornsbreyð"];
-    const condiments = ["Dijonaise", "Majones", /* ... */];
+    const toppings = ["Roast beef", "Egg and avocado", "Ham and tomato", "Peppersalami", "Garlic Salami", "Salami", "Liver paté", "Brie", "Egg", "Avocado"];
+    const breads = ["Chia bread", "Whole "];
+    const condiments = ["Dijonaise", "Majones", "Grønt pesto", "Reytt pesto", "Remoláta"];
 
     useEffect(() => {
         const savedFavorites = localStorage.getItem("favorites");
@@ -82,7 +83,7 @@ const App = () => {
         setFavorites(favs => favs.filter(fav => JSON.stringify(fav) !== JSON.stringify(sandwich)));
     };
 
-    const handleSliderChange = ( newValue: number | number[]) => {
+    const handleSliderChange = (event: MouseEvent, newValue: number | number[]) => {
         setNumSandwiches(newValue as number);
     };
 
