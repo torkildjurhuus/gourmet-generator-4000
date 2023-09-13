@@ -82,7 +82,7 @@ const App = () => {
         setFavorites(favs => favs.filter(fav => JSON.stringify(fav) !== JSON.stringify(sandwich)));
     };
 
-    const handleSliderChange = (event: Event, newValue: number | number[]) => {
+    const handleSliderChange = ( newValue: number | number[]) => {
         setNumSandwiches(newValue as number);
     };
 
