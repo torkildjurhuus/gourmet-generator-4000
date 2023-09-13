@@ -1,4 +1,4 @@
-import { useState, useEffect, MouseEvent } from "react";
+import { useState, useEffect } from "react";
 import { Button, Paper, Typography, IconButton, Slider } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './App.css';
@@ -83,9 +83,10 @@ const App = () => {
         setFavorites(favs => favs.filter(fav => JSON.stringify(fav) !== JSON.stringify(sandwich)));
     };
 
-    const handleSliderChange = (event: MouseEvent, newValue: number | number[]) => {
+    const handleSliderChange = (_: Event, newValue: number | number[]) => {
         setNumSandwiches(newValue as number);
     };
+
 
     return (
         <div className="app">

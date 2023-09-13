@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat:  removed active thumb">
+    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat:  fix ts error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694552833675</updated>
       <workItem from="1694552834742" duration="124000" />
-      <workItem from="1694552980778" duration="6710000" />
+      <workItem from="1694552980778" duration="7135000" />
     </task>
     <task id="LOCAL−00001" summary="feat: initial commit">
       <created>1694553622080</created>
@@ -136,7 +137,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1694600396942</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="feat:  translated everything">
+      <created>1694600530214</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1694600530214</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +167,8 @@
     <MESSAGE value="fix: removed event" />
     <MESSAGE value="fix: build error" />
     <MESSAGE value="feat:  removed active thumb" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  removed active thumb" />
+    <MESSAGE value="feat:  translated everything" />
+    <MESSAGE value="feat:  fix ts error" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  fix ts error" />
   </component>
 </project>
