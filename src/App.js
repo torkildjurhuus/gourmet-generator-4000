@@ -1,19 +1,12 @@
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, useEffect } from "react";
 import { Button, Paper, Typography, IconButton, Slider } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './App.css';
 
-interface ISandwich {
-    topping: string;
-    bread: string;
-    condiment: string;
-    presentation?: string;
-}
-
 const App = () => {
-    const [sandwiches, setSandwiches] = useState<ISandwich[]>([]);
-    const [favorites, setFavorites] = useState<ISandwich[]>([]);
-    const [numSandwiches, setNumSandwiches] = useState<number>(1);
+    const [sandwiches, setSandwiches] = useState([]);
+    const [favorites, setFavorites] = useState([]);
+    const [numSandwiches, setNumSandwiches] = useState(1);
 
     const presentationTemplates = [
         "A union of {bread} and {topping}, accentuated by {condiment}.",
@@ -54,7 +47,7 @@ const App = () => {
         localStorage.setItem("favorites", JSON.stringify(favorites));
     }, [favorites]);
 
-    const generatePresentation = (sandwich: ISandwich) => {
+    const generatePresentation = (sandwich) => {
         const randomIndex = Math.floor(Math.random() * presentationTemplates.length);
         return presentationTemplates[randomIndex]
             .replace("{bread}", sandwich.bread)
@@ -63,7 +56,7 @@ const App = () => {
     };
 
     const generateSandwiches = () => {
-        const newSandwiches: ISandwich[] = [];
+        const newSandwiches = [];
         for (let i = 0; i < numSandwiches; i++) {
             const topping = toppings[Math.floor(Math.random() * toppings.length)];
             const bread = breads[Math.floor(Math.random() * breads.length)];
@@ -74,16 +67,16 @@ const App = () => {
         setSandwiches(newSandwiches);
     };
 
-    const addToFavorites = (sandwich: ISandwich) => {
+    const addToFavorites = (sandwich) => {
         setFavorites(prev => [...prev, sandwich]);
     };
 
-    const removeFromFavorites = (sandwich: ISandwich) => {
+    const removeFromFavorites = (sandwich) => {
         setFavorites(favs => favs.filter(fav => JSON.stringify(fav) !== JSON.stringify(sandwich)));
     };
 
-    const handleSliderChange = (event: ChangeEvent<{}>, newValue: number | number[]) => {
-        setNumSandwiches(newValue as number);
+    const handleSliderChange = (event, newValue) => {
+        setNumSandwiches(newValue);
     };
 
     return (
