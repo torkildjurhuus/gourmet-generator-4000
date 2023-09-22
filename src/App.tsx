@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ChangeEvent } from "react";
 import { Button, Paper, Typography, IconButton, Slider } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './App.css';
@@ -14,7 +14,6 @@ const App = () => {
     const [sandwiches, setSandwiches] = useState<ISandwich[]>([]);
     const [favorites, setFavorites] = useState<ISandwich[]>([]);
     const [numSandwiches, setNumSandwiches] = useState<number>(1);
-
 
     const presentationTemplates = [
         "A union of {bread} and {topping}, accentuated by {condiment}.",
@@ -83,10 +82,9 @@ const App = () => {
         setFavorites(favs => favs.filter(fav => JSON.stringify(fav) !== JSON.stringify(sandwich)));
     };
 
-    const handleSliderChange = (_: Event, newValue: number | number[]) => {
+    const handleSliderChange = (event: ChangeEvent<{}>, newValue: number | number[]) => {
         setNumSandwiches(newValue as number);
     };
-
 
     return (
         <div className="app">
@@ -111,7 +109,7 @@ const App = () => {
             </div>
             <div className="sandwiches">
                 {sandwiches.map((sandwich, index) => (
-                    <Paper elevation={3} className="sandwich" key={index} style={{ position: 'relative', padding: '16px', marginBottom: '8px' }}>
+                    <Paper elevation={3} className="sandwich" key={index}>
                         <div className="icon-and-text">
                             <Typography variant="body1">{sandwich.presentation}</Typography>
                             <IconButton aria-label="add to favorites" onClick={() => addToFavorites(sandwich)}>
@@ -121,19 +119,15 @@ const App = () => {
                     </Paper>
                 ))}
             </div>
-            <Typography variant="h5" component="h2" gutterBottom style={{ marginTop: '16px', marginBottom: '16px' }}>
+            <Typography variant="h5" component="h2" gutterBottom>
                 Your Favorite Sandwiches
             </Typography>
             <div className="favorites">
                 {favorites.map((sandwich, index) => (
-                    <Paper elevation={3} className="sandwich" key={index} style={{ padding: '16px', marginBottom: '8px' }}>
+                    <Paper elevation={3} className="sandwich" key={index}>
                         <div className="icon-and-text">
                             <Typography variant="body1">{sandwich.presentation}</Typography>
-                            <IconButton
-                                aria-label="remove from favorites"
-                                onClick={() => removeFromFavorites(sandwich)}
-                                className="red-icon"
-                            >
+                            <IconButton aria-label="remove from favorites" onClick={() => removeFromFavorites(sandwich)}>
                                 <FavoriteIcon />
                             </IconButton>
                         </div>
