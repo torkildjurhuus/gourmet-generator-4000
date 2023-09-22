@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat:  add build">
+    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat:  removed typescript">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <updated>1694552833675</updated>
       <workItem from="1694552834742" duration="124000" />
       <workItem from="1694552980778" duration="8764000" />
-      <workItem from="1695423356405" duration="747000" />
+      <workItem from="1695423356405" duration="1162000" />
     </task>
     <task id="LOCAL−00001" summary="feat: initial commit">
       <created>1694553622080</created>
@@ -157,7 +158,19 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1694602342669</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="feat:  fixed build error">
+      <created>1695424715266</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1695424715266</updated>
+    </task>
+    <task id="LOCAL−00014" summary="feat:  removed typescript">
+      <created>1695424988476</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1695424988476</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +197,8 @@
     <MESSAGE value="feat:  translated everything" />
     <MESSAGE value="feat:  fix ts error" />
     <MESSAGE value="feat:  add build" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  add build" />
+    <MESSAGE value="feat:  fixed build error" />
+    <MESSAGE value="feat:  removed typescript" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  removed typescript" />
   </component>
 </project>
