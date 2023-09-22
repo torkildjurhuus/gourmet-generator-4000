@@ -12,6 +12,6 @@ The Gourmet Generator 4000 is a React-based web application that generates rando
 1. Clone the repo: `git clone https://github.com/yourusername/Gourmet-Generator-4000.git`
 2. Navigate to the project directory: `cd Gourmet-Generator-4000`
 3. Install dependencies: `yarn install`
-4. Start the dev server: `yarn start`
+4. Start the development server: `yarn start`
 5. Open your browser and go to `http://localhost:3000`
 
