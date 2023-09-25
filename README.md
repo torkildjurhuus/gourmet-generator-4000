@@ -14,4 +14,3 @@ The Gourmet Generator 4000 is a React-based web application that generates rando
 3. Install dependencies: `yarn install`
 4. Start the development server: `yarn start`
 5. Open your browser and go to `http://localhost:3000`
-

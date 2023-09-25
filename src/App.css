@@ -1,65 +1,42 @@
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.app {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.header {
-  width: 100%;
-  text-align: center;
-  padding-top: 100px;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.sandwiches, .favorites {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-
-
-.sandwich-content {
-  position: relative;
-  padding-bottom: 32px; /* Add extra padding to make room for the icon */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.fixed-slider {
-  max-width: 300px;
-  margin: auto;
+.card {
+  padding: 2em;
 }
 
-.sandwich {
-  position: relative;  /* this is crucial */
-  margin: 10px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 200px;
-  text-align: left;
-}
-
-.icon-and-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.red-icon {
-  color: red;
+.read-the-docs {
+  color: #888;
 }

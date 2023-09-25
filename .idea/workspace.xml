@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat: styling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat:  removed typescript" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +18,7 @@
     </option>
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -28,12 +27,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="design_changes" />
-                    <option name="lastUsedInstant" value="1694557485" />
+                    <option name="branchName" value="add-missing-types" />
+                    <option name="lastUsedInstant" value="1694594561" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1694557484" />
+                    <option name="lastUsedInstant" value="1694594546" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="design_changes" />
+                    <option name="lastUsedInstant" value="1694557485" />
                   </RecentBranch>
                 </list>
               </option>
@@ -52,21 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/torkildjurhuus/Code/Privat/gourmet-generator-4000",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/torkildjurhuus/Code/Privat/gourmet-generator-4000/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/torkildjurhuus/Code/Privat/gourmet-generator-4000&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/torkildjurhuus/Code/Privat/gourmet-generator-4000/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1694552833675</updated>
       <workItem from="1694552834742" duration="124000" />
-      <workItem from="1694552980778" duration="3420000" />
+      <workItem from="1694552980778" duration="8764000" />
+      <workItem from="1695423356405" duration="2400000" />
     </task>
     <task id="LOCAL−00001" summary="feat: initial commit">
       <created>1694553622080</created>
@@ -96,15 +105,119 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1694557525756</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="feat: styling">
+      <created>1694592425815</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1694592425815</updated>
+    </task>
+    <task id="LOCAL−00005" summary="feat: styling">
+      <created>1694593261967</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1694593261967</updated>
+    </task>
+    <task id="LOCAL−00006" summary="fix: added types">
+      <created>1694594572017</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1694594572017</updated>
+    </task>
+    <task id="LOCAL−00007" summary="fix: removed event">
+      <created>1694596804141</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1694596804141</updated>
+    </task>
+    <task id="LOCAL−00008" summary="fix: removed event">
+      <created>1694597601759</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1694597601759</updated>
+    </task>
+    <task id="LOCAL−00009" summary="feat:  removed active thumb">
+      <created>1694600396942</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1694600396942</updated>
+    </task>
+    <task id="LOCAL−00010" summary="feat:  translated everything">
+      <created>1694600530214</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1694600530214</updated>
+    </task>
+    <task id="LOCAL−00011" summary="feat:  fix ts error">
+      <created>1694600936232</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1694600936232</updated>
+    </task>
+    <task id="LOCAL−00012" summary="feat:  add build">
+      <created>1694602342669</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1694602342669</updated>
+    </task>
+    <task id="LOCAL−00013" summary="feat:  fixed build error">
+      <created>1695424715266</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1695424715266</updated>
+    </task>
+    <task id="LOCAL−00014" summary="feat:  removed typescript">
+      <created>1695424988476</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1695424988476</updated>
+    </task>
+    <task id="LOCAL−00015" summary="feat:  removed typescript">
+      <created>1695425203255</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1695425203255</updated>
+    </task>
+    <task id="LOCAL−00016" summary="feat:  removed typescript">
+      <created>1695426236568</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1695426236568</updated>
+    </task>
+    <task id="LOCAL−00017" summary="feat:  removed typescript">
+      <created>1695427444843</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1695427444843</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: initial commit" />
     <MESSAGE value="feat: styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: styling" />
+    <MESSAGE value="fix: added types" />
+    <MESSAGE value="fix: removed event" />
+    <MESSAGE value="fix: build error" />
+    <MESSAGE value="feat:  removed active thumb" />
+    <MESSAGE value="feat:  translated everything" />
+    <MESSAGE value="feat:  fix ts error" />
+    <MESSAGE value="feat:  add build" />
+    <MESSAGE value="feat:  fixed build error" />
+    <MESSAGE value="feat:  removed typescript" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  removed typescript" />
   </component>
 </project>
