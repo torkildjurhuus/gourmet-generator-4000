@@ -1,8 +1,16 @@
-# React + Vite
+# Gourmet Generator 4000
+## Overview
+The Gourmet Generator 4000 is a React-based web application that generates random gourmet sandwiches. Adjust the number of sandwiches to generate and add them to your favorites. The sandwiches are crafted from a variety of toppings, breads, and condiments.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- **Random Sandwich Generator**: Create random sandwiches based on preset lists of ingredients.
+- **Favorites**: Add and remove sandwiches to and from your favorites.
+- **Persistent Favorites**: Your favorites are stored in local storage.
+- **Dynamic Presentation**: Each sandwich comes with its unique, dynamically generated presentation text.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
+1. Clone the repo: `git clone https://github.com/yourusername/Gourmet-Generator-4000.git`
+2. Navigate to the project directory: `cd Gourmet-Generator-4000`
+3. Install dependencies: `yarn install`
+4. Start the development server: `yarn start`
+5. Open your browser and go to `http://localhost:3000`
