@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="feat:  removed typescript" />
+    <list default="true" id="b8a4cbdc-ebdb-4eb2-b724-d3dea4c98131" name="Changes" comment="fix:  added missing dependencies">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="add-missing-types" />
       </map>
     </option>
   </component>
@@ -26,6 +30,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="fixing-build-error" />
+                    <option name="lastUsedInstant" value="1695676575" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="add-missing-types" />
                     <option name="lastUsedInstant" value="1694594561" />
@@ -85,7 +93,8 @@
       <updated>1694552833675</updated>
       <workItem from="1694552834742" duration="124000" />
       <workItem from="1694552980778" duration="8764000" />
-      <workItem from="1695423356405" duration="2400000" />
+      <workItem from="1695423356405" duration="2815000" />
+      <workItem from="1695676179146" duration="675000" />
     </task>
     <task id="LOCAL−00001" summary="feat: initial commit">
       <created>1694553622080</created>
@@ -189,7 +198,13 @@
       <option name="presentableId" value="LOCAL−00017" />
       <updated>1695427444843</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL−00018" summary="fix:  added missing dependencies">
+      <created>1695427641106</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1695427641106</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +233,7 @@
     <MESSAGE value="feat:  add build" />
     <MESSAGE value="feat:  fixed build error" />
     <MESSAGE value="feat:  removed typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  removed typescript" />
+    <MESSAGE value="fix:  added missing dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:  added missing dependencies" />
   </component>
 </project>
